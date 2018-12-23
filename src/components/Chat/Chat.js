@@ -35,8 +35,8 @@ export class Chat extends React.Component {
             <div className = "chat">
                 <div className = "message-list">
                     <div className = "messages">
-                        {messages.map(message => (
-                            <Message key={Math.random()} text={message.text} />
+                        {messages.map((message, index) => (
+                            <Message key={index} text={message.text} />
                         ))}
                     </div>
                 </div>
